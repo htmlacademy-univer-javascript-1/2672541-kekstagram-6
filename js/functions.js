@@ -26,3 +26,22 @@ const extractNumber = (arg) => {
 
   return parseInt(result, 10);
 };
+
+checkStringLength('проверяемая строка', 20);
+checkStringLength('проверяемая строка', 18);
+checkStringLength('проверяемая строка', 10);
+
+isPalindrome('топот');
+isPalindrome('ДовОд');
+isPalindrome('Кекс');
+isPalindrome('Лёша на полке клопа нашёл ');
+
+extractNumber('2023 год');            // 2023
+extractNumber('ECMAScript 2022');     // 2022
+extractNumber('1 кефир, 0.5 батона'); // 105
+extractNumber('агент 007');           // 7
+extractNumber('а я томат');           // NaN
+
+extractNumber(2023); // 2023
+extractNumber(-1);   // 1
+extractNumber(1.5);  // 15
